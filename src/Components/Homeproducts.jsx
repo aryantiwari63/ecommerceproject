@@ -38,19 +38,19 @@
          <div class="homepageproduct">
             <div class="divimg"><img src={p5} class="homepageproductimg" /></div>
              <div class="divp">
-                 <p>Furniture</p>
+                 <a href="/furniture"><p>Furniture</p></a>
              </div>
          </div>
          <div class="homepageproduct">
              <div class="divimg"><img src={p6} class="homepageproductimg" /></div>
              <div class="divp">
-                 <p>Grocery</p>
+                <a href="/grocery"> <p>Grocery</p></a>
              </div>
          </div>
          <div class="homepageproduct">
              <div class="divimg"><img src={p7} class="homepageproductimg" /></div>
              <div class="divp">
-                 <p>Home & Kitchen</p>
+              <a href="/HomeKitchen"> <p>Home & Kitchen</p></a>
              </div>
          </div>
         

@@ -21,7 +21,7 @@ function Navbar() {
         <div className='rightnav  '>
             
          <Link to="/"><FontAwesomeIcon  className='ficon' icon={faHome}/></Link>
-         <Link to="/profile">  <FontAwesomeIcon className='ficon' icon={faUser}/></Link>
+         <Link to="/login">  <FontAwesomeIcon className='ficon' icon={faUser}/></Link>
            <FontAwesomeIcon className='ficon'  onClick={toggleSlider} icon={faShoppingCart}/>
          {/* <button className='ficon' onClick={toggleSlider}><FontAwesomeIcon icon={faShoppingCart}/></button> */}
         </div>

@@ -58,15 +58,27 @@ function ProductList({ category }) {
     }
   }, [category]);
 
-  return (
-    <div>
-      <h1>Products in {category}</h1>
+  return (  
+    <div className='mt-24'>
+      <h1 className='text-xl'>Products in {category}</h1>
       {products.length > 0 ? (
-        <ul>
+        
+          <div className='grid md:grid-cols-3 gap-5'>
           {products.map((product) => (
-            <li key={product.id}>{product.name}</li>
+            <div  key={product.id} className="card h-85  rounded-sm border-black border-1 p-3">
+              <div className='h-3/6'>
+              <img src={product.imageUrl} alt="productimage" className='h-full w-full'/>
+            
+            </div>
+             <div className='h-3/6'>
+              <p >{product.name}</p>
+              <p className='text-red-500'>₹{product.price}</p>
+              <button className='w-full h-10 text-sky-700 hover:bg-sky-700  hover:text-white mx-2'>Add to card</button>
+            </div>
+    
+            </div>
           ))}
-        </ul>
+        </div>
       ) : (
         <p>No products found.</p>
       )}
