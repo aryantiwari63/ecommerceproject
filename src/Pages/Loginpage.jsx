@@ -16,7 +16,7 @@ function Loginpage() {
                 console.log(token);
                   alert('User login successful');
                     localStorage.setItem('token',token);
-                    navigate("/profile");
+                    navigate("/home");
               }
           } catch (error) {
               // Check if error.response is available and handle accordingly

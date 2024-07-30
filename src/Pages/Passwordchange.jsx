@@ -9,6 +9,7 @@ function Passwordchange() {
              const response = await axios.post(`http://localhost:5000/api/forgotpasswordrequest`,{email});
                  if(response.ok){
                   console.log("all things work correctly");
+                  alert("email sended");
                  }
         
     }

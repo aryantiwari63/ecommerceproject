@@ -25,7 +25,9 @@ function App() {
 
      <Routes>
        
-       <Route path="/" element={<Home/>}/>
+       <Route path="/" element={<Loginpage/>}/>
+       
+       <Route path="/home" element={<Home/>}/>
        <Route path="/login" element={<Loginpage/>}/>
        <Route path="/signup" element={<Signuppage/>}/>
        <Route path="/profile" element={<Profile/>}/>
@@ -40,7 +42,6 @@ function App() {
       <Route path="/reset-password/:token" element={<Resetpassword/>}/>
        </Routes> 
    
-    
     </div>
   );
 }
