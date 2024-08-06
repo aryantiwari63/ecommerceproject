@@ -19,7 +19,7 @@ function Navbar() {
              <img src={borosil}/>
         </div>
         <div className='rightnav  '>
-            
+            <Link to="/login" className='py-5 font-bold'>Login</Link>
          <Link to="/"><FontAwesomeIcon  className='ficon' icon={faHome}/></Link>
          <Link to="/profile">  <FontAwesomeIcon className='ficon' icon={faUser}/></Link>
            <FontAwesomeIcon className='ficon'  onClick={toggleSlider} icon={faShoppingCart}/>

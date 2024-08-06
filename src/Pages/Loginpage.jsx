@@ -8,7 +8,7 @@ function Loginpage() {
            const [password, setpassword] = useState("");
           const onsubmitfun = async(e) =>{
             e.preventDefault();
-            //    
+                
             try {
               const response = await axios.post("http://localhost:5000/api/login", { email, password }, { headers: { 'Content-Type': 'application/json' } });
               if (response.status === 200) {
@@ -16,15 +16,14 @@ function Loginpage() {
                 console.log(token);
                   alert('User login successful');
                     localStorage.setItem('token',token);
-                    navigate("/home");
+                    navigate("/");
               }
           } catch (error) {
-              // Check if error.response is available and handle accordingly
+              
               if (error.response) {
-                  // Display server error message
                   alert(error.response.data.message || 'An error occurred');
               } else {
-                  // Handle errors that do not have a response
+                  
                   alert('An error occurred');
               }
           }

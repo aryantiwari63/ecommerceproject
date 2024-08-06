@@ -7,55 +7,67 @@
  import p5 from "../images/p5.jpg";
  import p6 from "../images/p6.jpg";
  import p7 from "../images/p7.jpg";
+ import { useNavigate } from 'react-router-dom';
  function Homeproducts() {
+          const navigate = useNavigate();
+         const  allproductcat = () =>{
+                        navigate("/mobileandtablets");
+          }
+                    
    return (
-     <div>
-          <div class="homepage-products">
-         <div class="homepageproduct">
+     <div class="homepageproducts">
+          
+         <div class="homepageproduct" onClick={allproductcat}>
              <div class="divimg"><img src={p1} class="homepageproductimg" /></div>
              <div class="divp">
-                 <p><a href="/mobileandtablets">Mobiles & Tablets</a></p>
+                 <p>Mobiles & Tablets</p>
              </div>
          </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/tvs"); }}>
              <div class="divimg"><img src={p2} class="homepageproductimg" /></div>
              <div class="divp">
-                 <p><a href="/tvs">TVs & Appliances</a></p>
+                 <p>TVs & Appliances</p>
              </div>
          </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/fashion"); }}>
              <div class="divimg"><img src={p3} class="homepageproductimg" /></div>
             <div class="divp">
-                 <p><a href="/fashion">Fashion</a></p>
+                 <p>Fashion</p>
              </div>
         </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/beauty"); }}>
              <div class="divimg"><img src={p4} class="homepageproductimg" /></div>
             <div class="divp">
-                 <p><a href='/beauty'>Beauty</a></p>
+                 <p>Beauty</p>
             </div>
          </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/furniture");  }}>
             <div class="divimg"><img src={p5} class="homepageproductimg" /></div>
              <div class="divp">
-                 <a href="/furniture"><p>Furniture</p></a>
+               <p>Furniture</p>
              </div>
          </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/grocery"); }}>
              <div class="divimg"><img src={p6} class="homepageproductimg" /></div>
              <div class="divp">
-                <a href="/grocery"> <p>Grocery</p></a>
+                 <p>Grocery</p>
              </div>
          </div>
-         <div class="homepageproduct">
+         <div class="homepageproduct"  onClick={() =>{
+                        navigate("/HomeKitchen"); }}>
              <div class="divimg"><img src={p7} class="homepageproductimg" /></div>
              <div class="divp">
-              <a href="/HomeKitchen"> <p>Home & Kitchen</p></a>
+              <p>Home & Kitchen</p>
              </div>
          </div>
         
      </div>
-     </div>
+     
    )
  }
 

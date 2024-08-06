@@ -16,8 +16,10 @@ import Loginpage from './Pages/Loginpage';
 import Signuppage from './Pages/Signuppage';
 import Passwordchange from './Pages/Passwordchange';
 import Resetpassword from './Pages/Resetpassword';
+import Productpage from './Pages/Productpage';
+import Cardproducts from './Pages/Cardproducts';
 function App() {
-
+                       const[ProfileData, setProfileData] = useState("");
   return (
     <div className="App">
      <Navbar/>
@@ -25,12 +27,10 @@ function App() {
 
      <Routes>
        
-       <Route path="/" element={<Loginpage/>}/>
-       
-       <Route path="/home" element={<Home/>}/>
+       <Route path="/" element={<Home/>}/>
        <Route path="/login" element={<Loginpage/>}/>
        <Route path="/signup" element={<Signuppage/>}/>
-       <Route path="/profile" element={<Profile/>}/>
+       <Route path="/profile" element={<Profile ProfileData={ProfileData} setProfileData={setProfileData}/>}/>
        <Route path="/mobileandtablets" element={<CategoryPage category="mobiles & tablets"/>}/>
        <Route path="/tvs" element={<CategoryPage category="tvs"/>}/>
        <Route path="/fashion" element={<CategoryPage category="fashion"/>}/>
@@ -40,6 +40,8 @@ function App() {
        <Route path="/HomeKitchen" element={<CategoryPage category="home & kitchen"/>}/>
       <Route path="/passwordchange" element={<Passwordchange/>}/>
       <Route path="/reset-password/:token" element={<Resetpassword/>}/>
+      <Route path="/productpage/:id" element={<Productpage/>}/>
+      <Route path="/cardlist" element={<Cardproducts/>}/>
        </Routes> 
    
     </div>

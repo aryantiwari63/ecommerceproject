@@ -11,6 +11,7 @@ const Addcardmenu = ({ isOpen, toggleSlider }) => {
      
       <img src={bagicon} alt="Bag Icon" className="w-full"/>
       <p className="p-4">Your cart is empty.</p>
+      <a href="/cardlist" className='text-green-500'>cardlist</a>
     </div>
   );
 };

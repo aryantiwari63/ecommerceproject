@@ -13,7 +13,9 @@
 .homepage-products::-webkit-scrollbar {
     display: none;
 }
-
+.homepageproducts{
+    display: flex;
+}
 .homepageproduct {
     flex: 0 0 auto;
     width: 80px;
