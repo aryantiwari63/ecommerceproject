@@ -38,12 +38,12 @@ function Productpage() {
 
 
   return (
-    <div className="mt-32 flex gap-x-6">
-    <div className="w-2/4">
-      <img src="https://www.beyoung.in/api/cache/catalog/products/polo_new_update_images_10_1_2022/black_flat_knit_mens_polo_t-shirt_base_02_07_2024_700x933.jpg" className="w-full" />
+     <div className="mt-32 flex flex-col md:flex-row gap-x-6"> {/*mt-32 flex gap-x-6*/}
+    <div className="w-full md:w-2/4">
+      <img src="https://www.beyoung.in/api/cache/catalog/products/polo_new_update_images_10_1_2022/black_flat_knit_mens_polo_t-shirt_base_02_07_2024_700x933.jpg" className="h-1/2 w-full" />
     </div>
   
-    <div className=" w-2/4 p-6 ">
+    <div className=" w-full md:w-2/4 p-6 ">
       <p className="text-xl mb-4 text-start font-medium">PRODUCT NAME</p>
       <div className="flex items-center mb-2 gap-2">
         <b className="text-lg">$900</b>

@@ -12,17 +12,21 @@ nav{
 
 
 .rightnav{
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
     column-gap: 4px;
+    
 }
 .leftnav{
-  width:70%;
+  width:50%;
+  
 }
 .leftnav img{
      margin-top: 10px;
-    margin-left: 20px; 
+   
+    margin-left: 30px;
+    width: 160px;
 }
 
 
@@ -37,13 +41,14 @@ nav{
      
     .leftnav img{
         margin-top: 10px;
-       margin-left: 20px; 
-       width: 160px;
+       margin-left: 10px; 
+       width: 140px;
    }
     .rightnav .ficon {
         font-size: 18px;
         margin: 0 5px; 
         margin-top: 18px;
       }
+
   }
  

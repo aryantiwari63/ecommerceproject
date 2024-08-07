@@ -12,6 +12,7 @@ import Profile from './Pages/Profile';
 
 import CategoryPage from './Pages/Category';
 import Addcardmenu from './Components/Addcardmenu';
+
 import Loginpage from './Pages/Loginpage';
 import Signuppage from './Pages/Signuppage';
 import Passwordchange from './Pages/Passwordchange';
@@ -22,9 +23,10 @@ function App() {
                        const[ProfileData, setProfileData] = useState("");
   return (
     <div className="App">
+      <div>
      <Navbar/>
   
-
+  </div>
      <Routes>
        
        <Route path="/" element={<Home/>}/>

@@ -13,9 +13,22 @@
          const  allproductcat = () =>{
                         navigate("/mobileandtablets");
           }
+
+    //  const name ={
+    //     "classname":homepageproduct,"functionname":allproductcat,
+
+    //  }     
                     
    return (
      <div class="homepageproducts">
+
+           
+        {/* <div class="homepageproduct" onClick={allproductcat}>
+             <div class="divimg"><img src={p1} class="homepageproductimg" /></div>
+             <div class="divp">
+                 <p>Mobiles & Tablets</p>
+             </div>
+         </div> */}
           
          <div class="homepageproduct" onClick={allproductcat}>
              <div class="divimg"><img src={p1} class="homepageproductimg" /></div>
@@ -44,7 +57,7 @@
                  <p>Beauty</p>
             </div>
          </div>
-         <div class="homepageproduct"  onClick={() =>{
+         {/* <div class="homepageproduct"  onClick={() =>{
                         navigate("/furniture");  }}>
             <div class="divimg"><img src={p5} class="homepageproductimg" /></div>
              <div class="divp">
@@ -64,7 +77,7 @@
              <div class="divp">
               <p>Home & Kitchen</p>
              </div>
-         </div>
+         </div> */}
         
      </div>
      
