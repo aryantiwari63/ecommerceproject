@@ -98,7 +98,7 @@ function Footer() {
         <div className="bg-black p-8 mt-10">
             <div className="flex justify-around text-white mb-8 text-sm font-bold">
                 <div className="text-start ">
-                    <div className="text-yellow-300 font-bold mb-4">NEED HELP</div>
+                    <div className="text-yellow-300 text-xl font-bold mb-4">NEED HELP</div>
                     <p><a>Contact Us</a></p>
                     <p><a>Track Order</a></p>
                     <p><a>Return & Refund</a></p>
@@ -106,17 +106,17 @@ function Footer() {
                     <p><a>Career</a></p>
                 </div>
                 <div className="text-start">
-                    <div className="text-yellow-300 font-bold mb-4">COMPANY</div>
+                    <div className="text-yellow-300 text-xl font-bold mb-4">COMPANY</div>
                     <p><a>About Us</a></p>
                 </div>
                 <div className="text-start">
-                    <div className="text-yellow-300 font-bold mb-4">MORE INFORMATION</div>
+                    <div className="text-yellow-300 text-xl font-bold mb-4">MORE INFORMATION</div>
                     <p><a>Terms & Conditions</a></p>
                     <p><a>Privacy Policy</a></p>
                     <p><a>Shipping Policy</a></p>
                 </div>
                 <div className="text-start">
-                    <div className="text-yellow-300 font-bold mb-4">CONTACT US</div>
+                    <div className="text-yellow-300 text-xl font-bold mb-4">CONTACT US</div>
                     <p><a>aryansjpr2@gmail.com</a></p>
                     <p><a>adglobal360, Sirsi road khatipura</a></p>
                     <p><a>Jaipur, India-302012</a></p>
@@ -144,8 +144,6 @@ function Footer() {
                     </div>
                 )}
             </div>
-
-
 
 
             <div className="w-full">
