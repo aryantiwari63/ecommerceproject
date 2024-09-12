@@ -93,7 +93,7 @@ function ProductList({ category }) {
   }, [searchTerm, products]);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const jobsPerPage = 5;
+  const jobsPerPage = 6;
 
   const indexOfLastJob = currentPage * jobsPerPage;
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
@@ -115,7 +115,10 @@ function ProductList({ category }) {
 
   return (
     <div className='mt-28'>
-      <div className='flex items-center mb-2 justify-center'>
+                  <div className='md:flex justify-between md:mr-10 md:ml-10'>
+                  <h1 className='text-xl text-green-600'>Products in {category}</h1>         
+      <div className='flex items-center mb-2 justify-center mt-4'>
+      
         <input
           type='text'
           value={searchTerm}
@@ -123,29 +126,32 @@ function ProductList({ category }) {
           className='p-2 border rounded-2xl'
           placeholder='Search products'
         />
-        <button onClick={handleSearch} className='ml-2 w-20 p-2 bg-blue-500 text-white rounded-2xl'>
+        <button onClick={handleSearch} className='ml-2 w-20 p-2 bg-yellow-500 text-white rounded-2xl'>
           Search
         </button>
       </div>
-      <h1 className='text-xl'>Products in {category}</h1>
+      </div>
+
       {currentJobs.length > 0 ? (
-        <div>
-          <div className='grid md:grid-cols-3 gap-5'>
+        <div className='mt-14'>
+          <div className='grid md:grid-cols-3 gap-5 p-8'>
             {currentJobs.map((product) => (
-              <div key={product._id} className="card h-85 rounded-sm border-black border-1 p-3" onClick={() => { productpagefun(product._id) }}>
-                <div className='h-3/6'>
-                  <img src={product.imageUrl} alt="productimage" className='h-full w-full' />
+              <div key={product._id} className="card h-70 rounded-sm border-black border-1 p-3 drop-shadow-2xl shadow-lg" onClick={() => { productpagefun(product._id) }}>
+                <div className='h-3/4'>
+                  <img src={product.imageUrl} alt="productimage" className='h-full w-full rounded-xl' />
                 </div>
                 <div className='h-3/6'>
                   <p>{product.name}</p>
-                  <p className='text-red-500'>₹{product.price}</p>
+                  <div className='flex justify-between pl-4'>
+                  <p className='text-red-500 py-2'>₹{product.price}</p>
                   {/* <button className='w-full h-10 text-sky-700 hover:bg-sky-700 hover:text-white mx-2' onClick={(event) => { handleAddToCart(product._id, event) }}>Add to cart</button> */}
-                  <button className='w-full h-10 text-sky-700 hover:bg-sky-700 hover:text-white mx-2' onClick={(event) => { handleAddToCart(product,event) }}>Add to cart</button>
+                  <button className='w-30 h-10 text-sky-700 hover:bg-sky-700 hover:text-white mx-2' onClick={(event) => { handleAddToCart(product,event) }}>Add to cart</button>
+               </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-4 gap-10">
+          <div className="flex justify-center mt-8 gap-10">
             <button 
               className='p-2 h-10 w-10 bg-black text-white rounded-full '
               onClick={handlePrevPage}

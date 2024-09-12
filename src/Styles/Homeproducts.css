@@ -2,13 +2,13 @@
 .homepage-products {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     padding-top: 90px;
     padding-left: 10px;
     height: 120px;
     margin-left: 10px;
     margin-top: 20px;
 }
+
 
 .homepage-products::-webkit-scrollbar {
     display: none;

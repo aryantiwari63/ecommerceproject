@@ -1,11 +1,14 @@
 import React,{useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import User from '../images/user.jpg'
 import axios from 'axios';
 function Signuppage() {
 
            const [name, setname] = useState("");     
            const [email, setemail] = useState("");
            const [password, setpassword] = useState("");
+           const image =  User;
+           
              const navigate = useNavigate();
            const onsubmitfun = async (e) => {
             e.preventDefault();
@@ -13,7 +16,8 @@ function Signuppage() {
               const response = await axios.post('http://localhost:5000/api/signup', {
                 name,
                 email,
-                password
+                password,
+                image
               });
                 console.log(response.data.message);
               if (response) {

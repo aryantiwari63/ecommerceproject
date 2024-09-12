@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from "./Redux/Store";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-<script src="https://cdn.tailwindcss.com"></script>
+{/* <script src="https://cdn.tailwindcss.com"></script> */}
 root.render(
   <Router>
   <React.StrictMode >
